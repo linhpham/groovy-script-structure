@@ -1,5 +1,9 @@
 #!/usr/bin/env groovy
 
+@GrabConfig(systemClassLoader=true)
+@Grab('mysql:mysql-connector-java:5.1.27')
+@Grab('log4j:log4j:1.2.17')
+
 def cli = new CliBuilder(usage:'data-fix')
 cli.with {
     u longOpt: 'user', args: 1, argName: 'user', required: true, 'DB user'
