@@ -20,6 +20,5 @@ class Processor {
         log.info "Password           : ${opts.p}"
         log.info "Source schema      : ${opts.s}"
         log.info "Destination schema : ${opts.d}"
-
     }
 }
